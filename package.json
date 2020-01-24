@@ -32,6 +32,9 @@
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "eslintConfig": {
     "root": true,
     "env": {
