@@ -5,7 +5,7 @@ html {
   font-size: 16px;
 }
 
-$medium-screen: 1000px;
+$medium-screen: 1100px;
 $small-screen: 800px;
 
 $white: #fff;
@@ -31,9 +31,9 @@ $yellow: #ffee00;
   flex-direction: row;
   flex-flow: row;
   flex-wrap: wrap;
-  padding-left: 15vw;
-  padding-right: 15vw;
-
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
   
   @media screen and (max-width: $medium-screen) {
     padding-left: 5vw;
@@ -46,7 +46,6 @@ $yellow: #ffee00;
   }
 
   &-item {
-    text-decoration: none;
     background-color: $white;
     border-radius: 0.3em;
     border: 0.3em solid transparent;
@@ -54,7 +53,17 @@ $yellow: #ffee00;
     display: block;
     flex-grow: 1;
     margin: 1em;
+    max-width: 40%;
     padding: 1em;
+    text-decoration: none;
+
+    @media screen and (max-width: $medium-screen) {
+      max-width: 80%;
+    }
+  
+    @media screen and (max-width: $small-screen) {
+      max-width: 100%;
+    }
 
     &:focus {
       cursor: pointer;
@@ -66,16 +75,7 @@ $yellow: #ffee00;
       cursor: pointer;
       border: 0.3em solid $orange;
       border-radius: 0.3em;
-    }
-
-    .title {
-      text-align: center;
-    }
-    
-    .description {
-      text-align: center;
-    }
-    
+    }    
   }
 }
 

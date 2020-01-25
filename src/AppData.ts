@@ -1,3 +1,11 @@
+export function sourceToTitle(source: string): string {
+  const sourceCleaned = source
+    .replace(/(http:\/\/|https:\/\/)/, '')
+    .replace(/(www\.)/, '');
+  const [title, rest] = sourceCleaned.split('.');
+  return `${title.substr(0, 1).toUpperCase()}${title.substr(1).toLowerCase()}`;
+}
+
 export const appData = [
   {
     title:
@@ -121,6 +129,12 @@ export const appData = [
     source: 'https://ruckus-rails.myshopify.com/collections/all'
   },
   {
+    title: 'Ride On Experience / 1st Onewheel® Dealer in Europe since 2016 ✌️',
+    description:
+      'Onewheel was inspired by snowboard, surf and skate sensations. It offers a brand new riding experience accessible to all, with nature as a playground.',
+    source: 'https://shop.rideonexperience.com/en'
+  },
+  {
     title: 'Shredd Labs – Your source for everything Onewheel',
     description: 'Your source for everything Onewheel',
     source: 'https://shreddlabs.com'
@@ -142,21 +156,21 @@ export const appData = [
     source: 'https://www.badgerwheel.com'
   },
   {
+    title: 'Electric Bigfoot',
+    description: 'Concave grip and other products for OneWheel XR and Pint',
+    source: 'https://www.electricbigfoot.com/'
+  },
+  {
     title: 'Elite Customs OW',
     description:
       'Custom Onewheel Gear Elite Rails Shred Plates Elite Stands Gnar Pack Merch \nMADE IN THE USA WORDWIDE SHIPPING',
     source: 'https://www.elitecustomsow.com'
   },
   {
-    title:
-      'Etsy - Your place to buy and sell all things handmade, vintage, and supplies',
-    description: '',
-    source: 'https://www.etsy.com/shop/Teece3D…'
-  },
-  {
-    title: 'Page Not Found | Facebook',
-    description: 'See posts, photos and more on Facebook.',
-    source: 'https://www.facebook.com/christopher.lopez.39948'
+    title: 'Teece3D on Etsy',
+    description:
+      'You searched for: Teece3D! Discover the unique items that Teece3D creates. At Etsy, we pride ourselves on our global community of sellers. Each Etsy seller helps contribute to a global marketplace of creative goods. By supporting Teece3D, you’re supporting a small business, and, in turn, Etsy!',
+    source: 'https://www.etsy.com/shop/Teece3D'
   },
   {
     title: 'FISHBONES - Carve Harder, Ride Longer... – fishbones.life',
@@ -190,28 +204,5 @@ export const appData = [
     title: 'Glider — SynergyWiz',
     description: '',
     source: 'https://www.synergywiz.com/glider'
-  },
-  {
-    title: '',
-    description: 'Instagram: NJcustom carbon custom fenders',
-    source: ''
-  },
-  {
-    title: '',
-    description:
-      'Amazon: XLR female Noise Reducing Caps - PTFE (Teflon) Insulation - Nickel Plated - Pack of 2',
-    source: ''
-  },
-  {
-    title: '',
-    description:
-      'Electricbigfoot (Instagram) front concave pad that layers above sensor.',
-    source: ''
-  },
-  {
-    title: '',
-    description:
-      'Lastly, Ryan Witz HureWitz (search the name on Facebook) for all OEM replacement parts. Also brand new XR’s for $1,675.',
-    source: ''
   }
 ];

@@ -24,7 +24,6 @@ const path = require('path');
       const description = await page
         .$eval('head > meta[name="description"]', element => element.content)
         .catch(() => '');
-      console.log('description', description);
 
       const ogDescription = await page
         .$eval(
