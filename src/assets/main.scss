@@ -8,6 +8,24 @@ html {
 $medium-screen: 1000px;
 $small-screen: 800px;
 
+$white: #fff;
+$orange: #ff9100;
+$yellow: #ffee00;
+
+.logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-item {
+    max-width: 20em;
+  }
+}
+
+
 .container {
   display: flex;
   flex-direction: row;
@@ -28,7 +46,8 @@ $small-screen: 800px;
   }
 
   &-item {
-    background-color: #fff;
+    text-decoration: none;
+    background-color: $white;
     border-radius: 0.3em;
     border: 0.3em solid transparent;
     color: #001;
@@ -39,25 +58,25 @@ $small-screen: 800px;
 
     &:focus {
       cursor: pointer;
-      border: 0.3em solid #fbff00;
+      border: 0.3em solid $yellow;
       border-radius: 0.3em;
     }
 
     &:hover {
       cursor: pointer;
-      border: 0.3em solid #ff9100;
+      border: 0.3em solid $orange;
       border-radius: 0.3em;
     }
+
+    .title {
+      text-align: center;
+    }
+    
+    .description {
+      text-align: center;
+    }
+    
   }
 }
 
-.title {
-  text-align: center;
-  text-decoration: none;
-  text-decoration-line: none;
-}
-
-.description {
-  text-align: center;
-}
 
