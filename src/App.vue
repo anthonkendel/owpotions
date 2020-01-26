@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <app-logo />
-    <app-search />
-    <app-data />
+    <app-search v-model="search" />
+    <app-data :search="search" />
   </div>
 </template>
 
@@ -14,6 +14,11 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'App',
+  data() {
+    return {
+      search: ''
+    };
+  },
   components: { AppLogo, AppSearch, AppData }
 });
 </script>
