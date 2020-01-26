@@ -1,30 +1,50 @@
 html {
-  background-color: #2F3A94;
+  background-color: #2f3a94;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
+}
+
+p {
+  font-size: 1em;
 }
 
 $medium-screen: 1100px;
 $small-screen: 800px;
 
+$border-radius: 0.3em;
+
 $white: #fff;
 $orange: #ff9100;
 $yellow: #ffee00;
 
-.logo {
+.input {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-color: $white;
+  border-radius: $border-radius;
+  border: 0.3em solid transparent;
+  color: #001;
+  display: block;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1em;
 
-  &-item {
-    max-width: 20em;
+  &:focus {
+    border: 0.3em solid $yellow;
+    border-radius: 0.3em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 0.3em solid $orange;
+    border-radius: 0.3em;
   }
 }
 
+.logo {
+  max-width: 20em;
+}
 
 .container {
   display: flex;
@@ -32,9 +52,9 @@ $yellow: #ffee00;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  
+  padding-left: 20vw;
+  padding-right: 20vw;
+
   @media screen and (max-width: $medium-screen) {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -44,39 +64,36 @@ $yellow: #ffee00;
     padding-left: 2vw;
     padding-right: 2vw;
   }
-
-  &-item {
-    background-color: $white;
-    border-radius: 0.3em;
-    border: 0.3em solid transparent;
-    color: #001;
-    display: block;
-    flex-grow: 1;
-    margin: 1em;
-    max-width: 40%;
-    padding: 1em;
-    text-decoration: none;
-
-    @media screen and (max-width: $medium-screen) {
-      max-width: 80%;
-    }
-  
-    @media screen and (max-width: $small-screen) {
-      max-width: 100%;
-    }
-
-    &:focus {
-      cursor: pointer;
-      border: 0.3em solid $yellow;
-      border-radius: 0.3em;
-    }
-
-    &:hover {
-      cursor: pointer;
-      border: 0.3em solid $orange;
-      border-radius: 0.3em;
-    }    
-  }
 }
 
+.item {
+  background-color: $white;
+  border-radius: $border-radius;
+  border: 0.3em solid transparent;
+  color: #001;
+  display: block;
+  flex-grow: 1;
+  margin: 1em;
+  max-width: 40%;
+  padding: 1em;
+  text-decoration: none;
 
+  @media screen and (max-width: $medium-screen) {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: $small-screen) {
+    max-width: 100%;
+  }
+
+  &:focus {
+    border: 0.3em solid $yellow;
+    border-radius: 0.3em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 0.3em solid $orange;
+    border-radius: 0.3em;
+  }
+}

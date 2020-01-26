@@ -1,20 +1,20 @@
 <template>
   <div class="container">
     <a
-      class="container-item"
+      class="item"
       v-for="(item, index) in appData"
       :key="index"
       :href="item.source"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <h2 class="title">
+      <h2>
         {{ sourceToTitle(item.source) }}
       </h2>
-      <small class="title"
+      <small
         ><strong>{{ item.title }}</strong></small
       >
-      <p class="description">{{ item.description }}</p>
+      <p>{{ item.description }}</p>
     </a>
   </div>
 </template>
