@@ -3,6 +3,7 @@
     <app-logo />
     <app-search v-model="search" />
     <app-data :search="search" />
+    <app-footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import AppLogo from '@/AppLogo.vue';
 import AppSearch from '@/AppSearch.vue';
 import AppData from '@/AppData.vue';
+import AppFooter from '@/AppFooter.vue';
 import Vue from 'vue';
 
 export default Vue.extend({
@@ -19,6 +21,6 @@ export default Vue.extend({
       search: ''
     };
   },
-  components: { AppLogo, AppSearch, AppData }
+  components: { AppLogo, AppSearch, AppData, AppFooter }
 });
 </script>
