@@ -64,10 +64,10 @@ export const appData = [
     source: 'https://craftandride.com'
   },
   {
-    title: 'EIGHT2TEN builds kydex holsters for conceal carry',
+    title: 'Onewheel Rail Guards',
     description:
-      'We are veteran owned and operated, manufacturing the best kydex holsters for a variety of weapons while providing outstanding service.',
-    source: 'https://eight2ten.com'
+      'EIGHT2TEN was the first to provide Rail Guards for the Onewheel Electronic boards in 2017.  Over the years we have perfected our guards from industrial strength plastic used in military environments.  Our material has proven to be durable and effective all while looking unique out on the streets.  We now offer full cus',
+    source: 'https://eight2ten.com/collections/onewheel-rail-guards'
   },
   {
     title: 'Elite Innovations | Performance Onewheel Products',
@@ -188,6 +188,11 @@ export const appData = [
     title: 'KiiL Guards',
     description: '',
     source: 'https://www.kiilguards.com'
+  },
+  {
+    title: 'Welcome to One Stop Board Shop - We Keep You Riding.',
+    description: '',
+    source: 'https://www.onestopboardshop.com/'
   },
   {
     title: 'Onewheel Accessories | Custom Soft Tracion Pads | ProRide',

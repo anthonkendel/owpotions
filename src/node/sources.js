@@ -9,7 +9,7 @@ module.exports = [
   'https://carbon-smith.com',
   'https://carvepower.com',
   'https://craftandride.com',
-  'https://eight2ten.com',
+  'https://eight2ten.com/collections/onewheel-rail-guards',
   'https://eliteinnovationsllc.com',
   'https://float-supply.com',
   'https://fluxskinz.com',
@@ -31,6 +31,7 @@ module.exports = [
   'https://www.fishbones.life',
   'https://www.flightfins.com',
   'https://www.kiilguards.com',
+  'https://www.onestopboardshop.com/',
   'https://www.prorideusa.com',
   'https://www.redbubble.com/people/onewheelartist',
   'https://www.synergywiz.com/glider'
