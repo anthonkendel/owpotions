@@ -32,6 +32,7 @@ module.exports = [
   'https://www.flightfins.com',
   'https://www.kiilguards.com',
   'https://www.onestopboardshop.com/',
+  'https://www.pinkoak.co.uk/',
   'https://www.prorideusa.com',
   'https://www.redbubble.com/people/onewheelartist',
   'https://www.synergywiz.com/glider'

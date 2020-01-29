@@ -195,6 +195,12 @@ export const appData = [
     source: 'https://www.onestopboardshop.com/'
   },
   {
+    title: 'PinkOak Onewheel Accessories | Custom Onewheel Sidekicks',
+    description:
+      'We are a European based manufacturer of custom onewheel accessories. Check out our ever growing variety sidekicks or challenge us to something more bespoke.',
+    source: 'https://www.pinkoak.co.uk/'
+  },
+  {
     title: 'Onewheel Accessories | Custom Soft Tracion Pads | ProRide',
     description:
       'ProRide designs and develops custom Onewheel accessories. Soft surf style traction pads for the Onewheel+ and Onewheel+XR.',
