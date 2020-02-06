@@ -83,6 +83,11 @@ export const appData = [
     source: 'https://float-supply.com'
   },
   {
+    title: 'Onewheel Accessories by Float Life Europe - Float Life Europe',
+    description: '',
+    source: 'https://floatlife-europe.com/'
+  },
+  {
     title: 'fluxskinz',
     description: 'fluxskinz',
     source: 'https://fluxskinz.com'
@@ -165,6 +170,12 @@ export const appData = [
     description:
       'Custom Onewheel Gear Elite Rails Shred Plates Elite Stands Gnar Pack Merch \nMADE IN THE USA WORDWIDE SHIPPING',
     source: 'https://www.elitecustomsow.com'
+  },
+  {
+    title: '3Dway on Etsy',
+    description:
+      'You searched for: 3Dway! Discover the unique items that 3Dway creates. At Etsy, we pride ourselves on our global community of sellers. Each Etsy seller helps contribute to a global marketplace of creative goods. By supporting 3Dway, you’re supporting a small business, and, in turn, Etsy!',
+    source: 'https://www.etsy.com/ca/shop/3Dway'
   },
   {
     title: 'Teece3D on Etsy',
