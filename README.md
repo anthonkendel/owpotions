@@ -1,6 +1,6 @@
-# OW Potions
+[![OW Potions](./src/assets/cover.png)](https://owpotions.com/#/ "OW Potions")
 
-## Project setup
+### Install dependencies
 
 ```bash
 npm install
@@ -16,10 +16,4 @@ npm run serve
 
 ```bash
 npm run build
-```
-
-### Lints and fixes files
-
-```bash
-npm run lint
 ```
